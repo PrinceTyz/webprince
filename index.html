@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Boostrap online. sir sinama ko na po yung online di po kasi nagana minsan sa offline-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Personal Webpage</title>
+</head>
+
+<body>
+
+
+  <!-- Gallery Modal -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="galleryModalLabel">Gallery</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row p-2">
+            <div class="col-md-4">
+              <img src="assests/mod (1).jpeg" alt="Image 1" class="img-fluid modal-img" onclick="enlargeImage(this)">
+            </div>
+            <div class="col-md-4">
+              <img src="assests/mod (2).jpeg" alt="Image 2" class="img-fluid modal-img" onclick="enlargeImage(this)">
+            </div>
+            <div class="col-md-4">
+              <img src="assests/mod (3).jpg" alt="Image 3" class="img-fluid modal-img" onclick="enlargeImage(this)">
+            </div>
+          </div>
+          <div class="row p-2">
+            <div class="col-md-4">
+              <img src="assests/mod (4).jpeg" alt="Image 4" class="img-fluid modal-img" onclick="enlargeImage(this)">
+            </div>
+            <div class="col-md-4">
+              <img src="assests/mod (5).jpeg" alt="Image 5" class="img-fluid modal-img" onclick="enlargeImage(this)">
+            </div>
+            <div class="col-md-4">
+              <img src="assests/mod (6).jpeg" alt="Image 6" class="img-fluid modal-img" onclick="enlargeImage(this)">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Web Design Modal -->
+  <div class="modal fade" id="webDesignModal" tabindex="-1" role="dialog" aria-labelledby="webDesignModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="webDesignModalLabel">Web Design Portfolio</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row p-2">
+              <div class="col-md-4">
+                <img src="assests/web1.png" alt="Image 1" class="img-fluid "  onclick="enlargeImage(this)">
+              </div>
+              <div class="col-md-4">
+                <img src="assests/web2.png" alt="Image 2" class="img-fluid"  onclick="enlargeImage(this)"> 
+              </div>
+              <div class="col-md-4">
+                <img src="assests/web3.png" alt="Image 3" class="img-fluid"  onclick="enlargeImage(this)">
+              </div>
+            </div>
+            <div class="row p-2">
+              <div class="col-md-4">
+                <img src="assests/web4.jpg" alt="Image 4" class="img-fluid"  onclick="enlargeImage(this)">
+              </div>
+              <div class="col-md-4">
+                <img src="assests/web5.png" alt="Image 5" class="img-fluid"  onclick="enlargeImage(this)">
+              </div>
+              <div class="col-md-4">
+                <img src="assests/web6.png" alt="Image 6" class="img-fluid"  onclick="enlargeImage(this)">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Videos Modal -->
+  <div class="modal fade" id="videosModal" tabindex="-1" role="dialog" aria-labelledby="videosModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="videosModalLabel">Videos Portfolio</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <video controls class="img-fluid" style="height: 200px;">
+                  <source src="assests/vid1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="col-md-4">
+                <video controls class="img-fluid" style="height: 200px;">
+                  <source src="assests/vid2.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="col-md-4">
+                <video controls class="img-fluid" style="height: 200px;">
+                  <source src="assests/shesh.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Navbar -->
+  <header class="sticky-top">
+
+    <nav class="p-2 navbar navbar-expand-lg" style="background: linear-gradient(30deg, #18c6e0, #00000057);">
+      <div class="container-fluid">
+        <a class="navbar-brand text-dark h2" href="#">Personal Website</a>
+        <span><img src="assests/logo.jpg" class="img-fluid rounded-circle d-none d-xl-block"
+            style="max-width: 50px; max-height: 50px;" alt=""></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars" style="color: #ffffff;"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#">
+                <i class="fas fa-home"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#profile">
+                <i class="fas fa-users"></i> Profile
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#services">
+                <i class="fas fa-cogs"></i> Services
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">
+                <i class="fas fa-phone"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </header>
+
+  <!-- HOME PAGE -->
+  <section>
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-sm-7 my-3 p-5" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
+          <h1 class="display-4 my-lg-5">My personal webpage</h1>
+          <p>Hi welcome to my personal webpage including my professional background,<br>
+            my interests and hobbies,and the projects I'm proud to have been a part of. I.T love to
+            , and I can't wait to share that passion with you.</p>
+          <button class="btn btn-outline-primary" onclick="alert('pogi ko pala')">My Project</button>
+        </div>
+        <div class="col-sm-5 d-none d-xl-block" data-aos="fade-left" >
+          <img src="assests/profile.png" class="img-fluid rounded-start-pill" alt="">
+        </div>
+  </section>
+
+
+  <!-- CONTEXT ABOUT -->
+  <section class="bg-light">
+    <div class="container p-5" id="profile">
+      <h2 class="text-center mb-4">Profile</h2>
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover"
+        data-bs-wrap="true">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assests/car1.jpg" class="d-block w-100" alt="poster1" style="height: 400px; object-fit: cover;">
+            <div class="carousel-caption">
+              <h5>Photographer</h5>
+              <p>A talented photographer who captures the essence of moments with a unique perspective</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assests/car2.jpg" class="d-block w-100" alt="poster2" style="height: 400px; object-fit: cover;">
+            <div class="carousel-caption">
+              <h5>Web designer</h5>
+              <p>A creative web designer with a keep eye for aesthetics and user experience</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="assests/car3.jpg" class="d-block w-100" alt="poster3" style="height: 400px; object-fit: cover;">
+            <div class="carousel-caption">
+              <h5>Video Editor</h5>
+              <p>A skilled video editor transforming raw footage into captivating visual stories</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="p-4 shadow rounded bg-light">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-sm-6 col-md-5">
+                <div class="about-img px-4">
+                  <img src="assests/logo.jpg" class="img-fluid rounded-circle" alt="">
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-7" data-aos="fade-down-right">
+                <div class="about-me">
+                  <p><span class="h5">Name: </span> <span>Prince Louie Z. Labao</span></p>
+                  <p><span class="h5">Profile: </span> <span>College Student</span></p>
+                  <p><span class="h5">Email: </span> <span>princelabao.basc@gmail.com</span></p>
+                  <p><span class="h5">Course: </span> <span>Bachelor of Science and Information Technology</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="my-4"  data-aos="fade-right"
+            data-aos-easing="linear"
+            data-aos-duration="800">
+              <h5 class="text-center">Skills</h5>
+              <div class="progress w-50 mx-auto">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 85%" aria-valuenow="85"
+                  aria-valuemin="0" aria-valuemax="100">HTML 85%</div>
+              </div>
+              <div class="progress mt-2 w-50 mx-auto">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75"
+                  aria-valuemin="0" aria-valuemax="100">CSS 75%</div>
+              </div>
+              <div class="progress mt-2 w-50 mx-auto">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="60"
+                  aria-valuemin="0" aria-valuemax="100">PHP 60%</div>
+              </div>
+              <div class="progress mt-2 w-50 mx-auto">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80"
+                  aria-valuemin="0" aria-valuemax="100">Bootstrap 80%</div>
+              </div>
+              <div class="progress mt-2 w-50 mx-auto">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="10"
+                  aria-valuemin="0" aria-valuemax="100">Javascript 10%</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6"  data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="800">
+            <div class="about-me pt-4 pt-md-0">
+              <div class="title-box-2">
+                <h3 class="text-center">
+                  About me
+                </h3>
+              </div>
+              <p class="lead">
+                My name is prince louie labao from bsit and I would like to introduce myself of why this course I choose
+                in my career so that the first reason is this my passion to become a programmer and many things about
+                information technology and I love a lot
+                many opportunities in every company to be part of innovation using technology
+              </p>
+              <p class="lead">
+                I always excited to pursue what I made from all projects like to create website especially to help
+                community what they need of technology. I want to be a part of these comumunity contributing to
+                making people's lives easier and more connected last the demand of this job is huge for me.
+              </p>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium laborum eos tempore optio fuga.
+                Magnam dolore,
+                explicabo provident dignissimos nulla laudantium illo veritatis molestias nobis libero optio cum, nihil
+                labore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+      <h1 class="text-center my-5">TECH STACK</h1>
+      <div class="row">
+        <div class="col-md-4" data-aos="flip-down">
+          <div class="text-center text-warning">
+            <i class="fab fa-js fa-5x"></i>
+            <h3>JavaScript</h3>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-down">
+          <div class="text-center text-primary">
+            <i class="fab fa-php fa-5x"></i>
+            <h3>PHP</h3>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-down">
+          <div class="text-center text-primary">
+            <i class="fab fa-bootstrap fa-5x"></i>
+            <h3>Bootstrap</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-4" data-aos="flip-down">
+          <div class="text-center text-danger">
+            <i class="fab fa-html5 fa-5x"></i>
+            <h3>HTML</h3>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-down">
+          <div class="text-center text-primary">
+            <i class="fab fa-css3 fa-5x"></i>
+            <h3>CSS</h3>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="flip-down">
+          <div class="text-center text-primary">
+            <i class="fab fa-php fa-5x"></i>
+            <h3>phpMyAdmin</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERBISYO -->
+  <section id="services">
+
+    <div class="container p-5" data-aos="fade-up">
+      <h2 class="text-center mb-3">Services</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Gallery</h5>
+              <p class="card-text">Here you can find a gallery of beautiful images. Just click on the link below to see
+                them.</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#galleryModal">
+                Go to Gallery
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Web Design</h5>
+              <p class="card-text">Need a beautiful website? Check out our portfolio to see the kind of designs we
+                offer.</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#webDesignModal">
+                Go to Portfolio
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Videos</h5>
+              <p class="card-text">Interested in our work through videos? Check out our video portfolio for an engaging
+                experience.</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#videosModal">
+                Go to Videos
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container p-5">
+        <h2 class="text-center mb-4">Offer services</h2>
+        <div class="row">
+          <div class="col-md-4 mb-3" data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+            <div class="card">
+              <img src="assests/serv1.jpg" class="card-img-top img-fluid" style="height: 400px; object-fit: cover;" alt="...">
+            </div>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="fade-zoom-in"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+            <div class="card">
+              <img src="assests/gif.gif" class="card-img-top img-fluid" style="height: 400px; object-fit: cover;" alt="...">
+            </div>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+            <div class="card">
+              <video class="card-img-top img-fluid" style="height: 400px; object-fit: cover;" autoplay loop muted>
+                <source src="assests/shesh.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </section>
+
+
+
+  <section>
+    <div class="container w-50 p-5" data-aos="fade-up"
+    data-aos-duration="1000">
+      <p class="display-5 text-center">Message me</p>
+      <form>
+        <div class="form-outline mb-4">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control"></input>
+        </div>
+        <div class="form-outline mb-4">
+          <label class="form-label">Email address</label>
+          <input type="email" class="form-control" placeholder="Ex. Princelouie@gmail.com"></input>
+        </div>
+        <div class="form-outline mb-4">
+          <textarea class="form-control" rows="4"></textarea>
+          <label class="form-label">Message</label>
+        </div>
+        <div class="form-check d-flex justify-content-center mb-4">
+          <input class="form-check-input me-2" type="checkbox"></input>
+          <label class="form-check-label" for="form4Example4">
+            Send me a copy of this message
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary mb-4 mx-auto d-flex justify-content-center">Send</button>
+      </form>
+    </div>
+
+    <footer class="bg-dark text-light py-5">
+      <div class="container" id="contact">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Contact Information</h5>
+            <p class="lead">Email: princelabao.basc@gmail.com</p>
+            <p class="lead">Phone: +63 961 277 4311</p>
+            <p class="lead">Location: Salangan San, Miguel, Bulacan</p>
+          </div>
+          <div class="col-md-6 my-3">
+            <h5>Follow Me</h5>
+            <ul class="list-inline my-3">
+              <li class="list-inline-item"><a href="https://www.facebook.com/Ka.prince.20"><i
+                    class="fab fa-facebook fa-lg" style="font-size: 30px;"></i></a></li>
+              <li class="list-inline-item"><a href="https://twitter.com/?lang=en"><i class="fab fa-twitter fa-lg" style="font-size: 30px;"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/login"><i class="fab fa-linkedin fa-lg" style="font-size: 30px;"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg" style="font-size: 30px;"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <p class="bg-info text-center p-2">&copy;2023 All rights reserved design by prince</p>
+
+  </section>
+
+<!-- JAVASCRIPT CODE -->
+  <script>
+    function enlargeImage(image) {
+      var modal = $('<div class="modal" id="enlargedModal" tabindex="-1" role="dialog">').appendTo('body');
+      var modalDialog = $('<div class="modal-dialog modal-dialog-centered modal-lg" role="document">').appendTo(modal);
+      var modalContent = $('<div class="modal-content">').appendTo(modalDialog);
+   
+      $(image.cloneNode(true)).appendTo(modalContent);
+  
+      modal.modal('show');
+  
+      modal.on('hidden.bs.modal', function () {
+        modal.remove();
+      });
+    }
+  </script>
+
+<!-- LIBRARY -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script>
+      AOS.init();
+    </script>
+
+<script>
+AOS.init({
+  // Global settings:
+  disable: false, 
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
+</body>
+
+</html>
+
+<style>
+  .navbar-nav .nav-item {
+    transition: 0.2s;
+    border-radius: 10px;
+  }
+
+  .navbar-nav .nav-item:hover {
+    background-color: #4a5664;
+    border-radius: 10px;
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    transition: color 0.3s;
+    border-radius: 10px;
+  }
+
+  .navbar-nav .nav-item:hover .nav-link {
+    color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .navbar-nav .nav-item .nav-link .fas {
+    transition: color 0.3s;
+  }
+
+  .navbar-nav .nav-item .nav-link:hover .fas {
+    color: #00ff15;
+  }
+
+  .modal-body img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .modal-body video {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .modal-body img {
+    transition: transform 0.3s;
+  }
+
+  .modal-body img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  #contact p {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+  .list-inline-item a i {
+    color: #ffffff;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  }
+
+  .list-inline-item a i:hover {
+    color: #002cbe; 
+    box-shadow: 0 0 20px rgba(85, 161, 247, 0.8);
+    transform: scale(1.1);
+  }
+
+  .list-inline-item a:hover i.fa-twitter {
+    color: #1da1f2; 
+    box-shadow: 0 0 20px rgba(29, 161, 242, 0.8);
+  }
+
+  .list-inline-item a:hover i.fa-linkedin {
+    color: #0077b5; 
+    box-shadow: 0 0 20px rgba(0, 119, 181, 0.8);
+  }
+
+  .list-inline-item a:hover i.fa-instagram {
+    color: #e4405f; 
+    box-shadow: 0 0 20px rgba(228, 64, 95, 0.8); 
+  }
+  .modal-body img {
+      cursor: pointer;
+    }
+    .animated {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animated.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
