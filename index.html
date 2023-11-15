@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ <!-- MIDTERM PROJECT FOR WEB dev2-->
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
 
   <!-- Gallery Modal -->
   <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="galleryModalLabel"
@@ -180,13 +179,12 @@
   <section>
     <div class="container p-5">
       <div class="row">
-        <div class="col-sm-7 my-3 p-5" data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom">
-          <h1 class="display-4 my-lg-5">My personal webpage</h1>
-          <p>Hi welcome to my personal webpage including my professional background,<br>
+        <div class="col-sm-7 my-3 p-5" data-aos="fade-right">
+          <h1 class="display-4 my-4">My personal webpage</h1>
+          <p>Hi welcome to my personal webpage including my professional background
             my interests and hobbies,and the projects I'm proud to have been a part of. I.T love to
             , and I can't wait to share that passion with you.</p>
-          <button class="btn btn-outline-primary" onclick="alert('pogi ko pala')">My Project</button>
+          <a class="btn btn-outline-primary" href="https://github.com/PrinceTyz/webprince.git">My Project</a>
         </div>
         <div class="col-sm-5 d-none d-xl-block" data-aos="fade-left" >
           <img src="assests/profile.png" class="img-fluid rounded-start-pill" alt="">
@@ -318,7 +316,7 @@
     </div>
 
     <div class="container-fluid mt-4">
-      <h1 class="text-center my-5">TECH STACK</h1>
+      <h2 class="text-center my-5">TECH STACK</h2>
       <div class="row">
         <div class="col-md-4" data-aos="flip-down">
           <div class="text-center text-warning">
@@ -443,24 +441,29 @@
 
 
   <section>
-    <div class="container w-50 p-5" data-aos="fade-up"
-    data-aos-duration="1000">
+    <div class="container-lg p-5" data-aos="fade-up" data-aos-duration="1000">
       <p class="display-5 text-center">Message me</p>
       <form>
-        <div class="form-outline mb-4">
-          <label class="form-label">Name</label>
-          <input type="text" class="form-control"></input>
-        </div>
-        <div class="form-outline mb-4">
-          <label class="form-label">Email address</label>
-          <input type="email" class="form-control" placeholder="Ex. Princelouie@gmail.com"></input>
+        <div class="row">
+          <div class="col-md-6 mx-auto"> 
+            <div class="form-outline mb-4">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6 mx-auto"> 
+            <div class="form-outline mb-4">
+              <label class="form-label">Email address</label>
+              <input type="email" class="form-control" placeholder="Ex. Princelouie@gmail.com">
+            </div>
+          </div>
         </div>
         <div class="form-outline mb-4">
           <textarea class="form-control" rows="4"></textarea>
           <label class="form-label">Message</label>
         </div>
         <div class="form-check d-flex justify-content-center mb-4">
-          <input class="form-check-input me-2" type="checkbox"></input>
+          <input class="form-check-input me-2" type="checkbox">
           <label class="form-check-label" for="form4Example4">
             Send me a copy of this message
           </label>
